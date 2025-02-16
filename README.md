@@ -9,7 +9,7 @@ A **Máquina de Turing**, proposta por **Alan Turing** em 1936, é um modelo mat
 - Um **cabeçote** que se move sobre a fita, alterando seu conteúdo de acordo com regras predefinidas.  
 - Um conjunto de **estados** e **transições** que determinam o comportamento da máquina.  
 
-### 🔬 Definição Formal  
+### Definição Formal  
 
 Uma Máquina de Turing é formalmente definida como uma **7-tupla**:  
 **M = (Q, Σ, Γ, δ, q₀, q_accept, q_reject)**  
