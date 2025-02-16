@@ -1,0 +1,54 @@
+; Maquina que aceita cadeias palindromo separado por c. Prefixo 0 significa rejeitado e 1 aceito
+
+; Estado atual, Símbolo lido, Símbolo escrito, Movimento (L/R), Próximo estado
+
+bloco main 0
+0, a, A, r, 1
+0, b, B, r, 2
+0, c, c, r, 0
+0, A, A, r, 0
+0, B, B, r, 0
+0, -, -, l, 7
+fim
+bloco segundo 1
+1, a, a, r, 1
+1, b, b, r, 1
+1, c, c, r, 3
+1, -, -, l, 6
+2, a, a, r, 2
+2, b, b, r, 2
+2, c, c, r, 4
+2, -, -, l, 6
+3, a, A, l, 5
+3, b, b, l, 6
+3, c, c, l, 6
+3, A, A, r, 3
+3, B, B, r, 3
+3, -, -, l, 6
+4, a, a, l, 6
+4, b, B, l, 5
+4, c, c, l, 6
+4, A, A, r, 4
+4, B, B, r, 4
+4, -, -, l, 6
+5, a, a, l, 5
+5, b, b, l, 5
+5, c, c, l, 5
+5, A, A, l, 5
+5, B, B, l, 5
+5, -, -, r, 0
+6, a, a, l, 6
+6, b, b, l, 6
+6, c, c, l, 6
+6, A, a, l, 6
+6, B, b, l, 6
+6, -, 0, r, 6
+fim
+bloco final 7
+7, a, a, l, 7
+7, b, b, l, 7
+7, c, c, l, 7
+7, A, a, l, 7
+7, B, b, l, 7
+7, -, 1, r, retorne
+fim

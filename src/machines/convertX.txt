@@ -1,0 +1,14 @@
+;converte qualquer caractere em X
+bloco main 0
+0, *, *, r, 0
+0, 1, X, l, 1
+fim
+
+bloco substitui 1
+1, *, X, l, 1
+1, -, -, *, 2
+fim
+bloco fim 2
+2, -, -, *, retorne
+fim
+
